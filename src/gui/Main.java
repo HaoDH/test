@@ -5,6 +5,8 @@
  */
 package gui;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author Hao-Dang
@@ -14,8 +16,11 @@ public class Main extends javax.swing.JFrame {
     /**
      * Creates new form Main
      */
+    private DefaultListModel dl;
     public Main() {
         initComponents();
+        dl = new DefaultListModel();
+        jListLesson.setModel(dl);
     }
 
     /**
